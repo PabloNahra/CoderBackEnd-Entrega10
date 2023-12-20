@@ -1,0 +1,32 @@
+<div>
+    <h1>HOME - Bienvenido</h1>
+    {{!-- <input type="text" id="inputInfo"><button id="sendInfo">Enviar</button>
+    <div id="outputInfo"></div> --}}
+    <h2>REAL TIME PRODUCTS</h2>
+    <h3>Crear un producto</h3>
+    <ul>
+        <li><p>Title: <input type="text" id="inputTitle"></li></p>
+        <li><p>Description: <input type="text" id="inputDescription"></li></p>
+        <li><p>Code: <input type="text" id="inputCode"></li></p>
+        <li><p>Price: <input type="int" id="inputPrice"></li></p>
+        <li><p>Stock: <input type="int" id="inputStock"></li></p>
+        <li><p>Category: <input type="text" id="inputCategory"></li></p>
+    </ul>
+    <button id="sendInfo">Enviar Alta</button>
+    <br>
+    <h3>Baja de un producto</h3>
+    <ul>
+        <li><p>Id: <input type="text" id="idBaja"></li></p>
+    </ul>
+    <button id="sendBaja">Enviar Baja</button>
+    <br>
+    <h3>Productos Existentes</h3>
+    <div id="outputRealTimeProd"></div>
+    
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src='js/realTimeProducts.js'></script>
+
+{{!-- <script src='/js/index.js'></script> --}}
+{{!-- <script src="{{baseURL}}/js/index.js"></script> --}}
