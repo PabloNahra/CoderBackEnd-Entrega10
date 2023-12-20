@@ -1,5 +1,4 @@
 import { Router } from 'express'
-import { ProdManager } from '../ProductManager.js'
 
 const homeRoutes = Router()
 

@@ -19,7 +19,6 @@ const idBaja = document.getElementById('idBaja')
 
 
 button.addEventListener('click', event => {
-    console.log("Click en Enviar")
     socket.emit('altaProd', {title: inputTitle.value, description: inputDescription.value,
     code: inputCode.value, price: inputPrice.value, stock: inputStock.value, 
     category: inputCategory.value})
@@ -37,7 +36,7 @@ socket.on('realTimeProd', data => {
     console.log('innerHTML - realTimeProd')
     p.innerHTML = `
         <ul>
-            ${data.map(d => `<li>Id: ${d.id} Title: ${d.title}</li>`)}
+            ${data.map(d => `<li>Id: ${d.id} - Title: ${d.title}</li>`)}
         </ul>
         `
 })

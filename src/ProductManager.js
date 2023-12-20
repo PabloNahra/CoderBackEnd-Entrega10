@@ -78,9 +78,6 @@ export class ProdManager{
     }
 
     async deleteProduct(id){
-        console.log("Delete product")
-        console.log(id)
-        console.log(parseInt(id))
         const products = await this.getProducts()
         const productsNotDeleted = products.filter(product => product.id !== parseInt(id))
         await fs.promises.writeFile(this.path, JSON.stringify(productsNotDeleted), 'utf-8')
